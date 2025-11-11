@@ -163,7 +163,10 @@ curl -X GET http://localhost:3004/api/payment
 curl -X GET http://localhost:3004/api/payment/1
 ```
 
-
+### Postman collection Link : 
+```
+https://clefill-driver-api-2682.postman.co/workspace/Clefill-Driver-API-Workspace~9bf6b8b3-53c8-4f25-9cd4-7229b52b6cf2/collection/21278468-daf895e9-701c-4c54-9c4c-d22bcc303aef?action=share&creator=21278468&active-environment=43041573-85f2ff87-af45-41d3-bc5d-aca8eb93f0d3
+```
 
 ### Abhishek Srivastav
 ### Software Engineer
