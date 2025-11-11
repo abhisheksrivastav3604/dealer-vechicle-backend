@@ -22,7 +22,7 @@ This backend provides secure endpoints for CRUD operations and integrates dealer
 | Layer | Technology |
 |--------|-------------|
 | **Backend Framework** | Spring Boot |
-| **Database** | MySQL / PostgreSQL |
+| **Database** | PostgreSQL |
 | **Security** | Spring Security + JWT |
 | **Build Tool** | Maven |
 | **Java Version** | Java 17+ |
