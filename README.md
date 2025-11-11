@@ -59,7 +59,7 @@ http://localhost:3004
 ## Authentication APIs
 ### 1. Register Dealer
 ```
-curl -X POST http://localhost:8080/api/auth/register \
+curl -X POST http://localhost:3004/api/auth/register \
 -H "Content-Type: application/json" \
 -d '{
   "username": "dealer1",
@@ -70,7 +70,7 @@ curl -X POST http://localhost:8080/api/auth/register \
 ### 2. Login
 
 ```
-curl -X POST http://localhost:8080/api/auth/login \
+curl -X POST http://localhost:3004/api/auth/login \
 -H "Content-Type: application/json" \
 -d '{
   "username": "dealer1",
@@ -84,7 +84,7 @@ Note: Use the returned JWT token in the Authorization header for secured routes.
 ## Dealer APIs
 ### 1. Create Dealer
 ```
-curl -X POST http://localhost:8080/api/dealers \
+curl -X POST http://localhost:3004/api/dealers \
 -H "Authorization: Bearer <token>" \
 -H "Content-Type: application/json" \
 -d '{
@@ -97,26 +97,26 @@ curl -X POST http://localhost:8080/api/dealers \
 
 ### 2. Get All Dealers
 ```
-curl -X GET http://localhost:8080/api/dealers
+curl -X GET http://localhost:3004/api/dealers
 ```
 
 ### 3. Get Dealer by ID
 
 ```
-curl -X GET http://localhost:8080/api/dealers/1
+curl -X GET http://localhost:3004/api/dealers/1
 ```
 
 ### 4. Delete Dealer
 
 ```
-curl -X DELETE http://localhost:8080/api/dealers/1
+curl -X DELETE http://localhost:3004/api/dealers/1
 ```
 
 ## Vehicle APIs
 ### 1. Create Vehicle
 
 ```
-curl -X POST http://localhost:8080/api/vehicles \
+curl -X POST http://localhost:3004/api/vehicles \
 -H "Content-Type: application/json" \
 -d '{
   "dealerId": 1,
@@ -128,23 +128,23 @@ curl -X POST http://localhost:8080/api/vehicles \
 
 ### 2. Get All Vehicles
 ```
-curl -X GET http://localhost:8080/api/vehicles
+curl -X GET http://localhost:3004/api/vehicles
 ```
 
 ### 3. Get Vehicle by ID
 ```
-curl -X GET http://localhost:8080/api/vehicles/1
+curl -X GET http://localhost:3004/api/vehicles/1
 ```
 
 ### 4. Delete Vehicle
 ```
-curl -X DELETE http://localhost:8080/api/vehicles/1
+curl -X DELETE http://localhost:3004/api/vehicles/1
 ```
 
 ## Payment APIs
 ### 1. Initiate Payment
 ```
-curl -X POST http://localhost:8080/api/payment/initiate \
+curl -X POST http://localhost:3004/api/payment/initiate \
 -H "Content-Type: application/json" \
 -d '{
   "dealerId": "1",
@@ -155,12 +155,12 @@ curl -X POST http://localhost:8080/api/payment/initiate \
 ### 2. Get All Payments
 
 ```
-curl -X GET http://localhost:8080/api/payment
+curl -X GET http://localhost:3004/api/payment
 ```
 
 ### 3. Get Payment by ID
 ```
-curl -X GET http://localhost:8080/api/payment/1
+curl -X GET http://localhost:3004/api/payment/1
 ```
 
 
