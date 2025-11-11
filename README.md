@@ -116,10 +116,10 @@ curl -X DELETE http://localhost:3004/api/dealers/1
 ### 1. Create Vehicle
 
 ```
-curl -X POST http://localhost:3004/api/vehicles \
--H "Content-Type: application/json" \
--d '{
-  "dealerId": 1,
+curl --location 'http://localhost:3004/api/vehicles/dealer/2' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhYmhpc2hla0BleGFtcGxlLmNvbSIsImlhdCI6MTc2Mjg1Mzc3NiwiZXhwIjoxNzYyOTQwMTc2fQ.sAErD2RD8qK86beIKeO7TwT5cghgwC1hq72iQPlKSXIPuzfxp36Kkvlfa2UL_t7u' \
+--data '{
   "model": "Honda City",
   "registrationNumber": "GJ01AB1234",
   "status": "AVAILABLE"
@@ -165,7 +165,7 @@ curl -X GET http://localhost:3004/api/payment/1
 
 ### Postman collection Link : 
 ```
-https://clefill-driver-api-2682.postman.co/workspace/Clefill-Driver-API-Workspace~9bf6b8b3-53c8-4f25-9cd4-7229b52b6cf2/collection/21278468-daf895e9-701c-4c54-9c4c-d22bcc303aef?action=share&creator=21278468&active-environment=43041573-85f2ff87-af45-41d3-bc5d-aca8eb93f0d3
+https://drive.google.com/file/d/17pMVft1jNcPb2VU_2tTh4OoSDpUxMn9Y/view?usp=sharing
 ```
 
 ### Abhishek Srivastav
